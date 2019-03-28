@@ -3,7 +3,7 @@ return knex.schema.createTable('dishes', table => {
     //id
     table.increments();
     // name
-    table.string('name', 128).notNullable();
+    table.string('name', 188).notNullable().unique();
 })
 };
 
