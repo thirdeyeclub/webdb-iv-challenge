@@ -1,5 +1,5 @@
 exports.seed = function(knex) {
-  return knex('dishes').insert([
+  return knex('recipes').insert([
     { id: 1 ,
     name: 'Red Curry Noodles',
     dish_id:1,

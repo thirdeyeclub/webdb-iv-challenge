@@ -7,7 +7,7 @@ exports.up = function(knex, Promise) {
         //foreign key to connect recipe to dish id
         table.integer("dish_id")
         .notNullable()
-        .reference("id")
+        .references("id")
         .inTable("dishes")
         .onDelete("RESTRICT")
         .onUpdate("CASCADE");
